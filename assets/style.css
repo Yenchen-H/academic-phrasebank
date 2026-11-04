@@ -305,3 +305,38 @@ a { color: var(--accent); }
   .phrase { padding: 16px; }
   .phrase .template { font-size: 1.02rem; }
 }
+
+/* ---------- 段落結構（章節頁，歸納自 SCI 論文的 Move） ---------- */
+.moves {
+  margin: 0 0 24px;
+  padding: 16px 20px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--card);
+}
+.moves h2 { font-family: var(--serif-tc); font-size: 1rem; margin: 0 0 8px; }
+.moves ol { margin: 0; padding-left: 1.4em; }
+.moves li { margin: 4px 0; font-size: .93rem; }
+.moves .move-name { margin-right: 8px; }
+.moves a {
+  display: inline-block;
+  font-family: var(--serif-en);
+  font-size: .75rem;
+  text-decoration: none;
+  color: var(--accent);
+  background: var(--accent-soft);
+  border-radius: 4px;
+  padding: 0 6px;
+  margin: 2px 4px 2px 0;
+}
+.moves a:hover { background: var(--surface); }
+
+/* ---------- 首頁歸納來源 ---------- */
+.sources { margin-bottom: 48px; font-size: .9rem; color: var(--ink-soft); }
+.sources > p { margin: 0 0 10px; }
+.sources ol { padding-left: 1.4em; margin: 0; }
+.sources li { margin-bottom: 10px; }
+.sources a { color: var(--ink); text-decoration: none; }
+.sources a:hover { color: var(--accent); }
+.src-journal { font-style: italic; margin-left: 4px; }
+.src-use { display: block; font-size: .82rem; color: var(--accent); }

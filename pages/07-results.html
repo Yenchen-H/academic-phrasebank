@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>結果呈現｜學術佳句庫</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&family=Noto+Serif+TC:wght@600;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <div class="wrap">
+
+    <header class="page-header">
+      <a class="back" href="../index.html">← 回目錄</a><br>
+      <span class="code">RES</span>
+      <h1>結果呈現</h1>
+      <p class="en">Results</p>
+      <p class="lead">客觀呈現研究發現，引導讀者看圖表的重點，先不做過多解釋。</p>
+    </header>
+
+    <section class="usage">
+      <h2>寫作提醒</h2>
+      <ul>
+        <li>結果章節以描述為主，少用 may、might，解釋原因留到討論章節。</li>
+        <li>不要只寫 as shown in Table 3，要說出表格中最重要的發現。</li>
+        <li>時態：發現用過去式，指涉圖表用現在式（Table 3 shows）。</li>
+        <li>同一個數值在全文要一致，結果、討論、結論出現的數字要互相核對。</li>
+      </ul>
+    </section>
+
+    <section class="moves">
+      <h2>段落結構</h2>
+      <ol>
+        <li><span class="move-name">呈現主要結果並指引圖表</span><a href="#RES-01">RES-01</a><a href="#RES-02">RES-02</a></li>
+        <li><span class="move-name">比較模型或組別</span><a href="#RES-03">RES-03</a><a href="#RES-04">RES-04</a><a href="#RES-07">RES-07</a></li>
+        <li><span class="move-name">呈現解釋性分析</span><a href="#RES-05">RES-05</a><a href="#RES-08">RES-08</a></li>
+        <li><span class="move-name">報告穩健性檢驗</span><a href="#RES-06">RES-06</a><a href="#RES-09">RES-09</a><a href="#RES-10">RES-10</a></li>
+      </ol>
+    </section>
+
+    <div class="filter-bar"></div>
+
+    <main class="phrase-list">
+
+      <article class="phrase" id="RES-01" data-tags="圖表">
+        <div class="phrase-head">
+          <span class="phrase-id">RES-01</span>
+          <h3 class="func">引導讀者看圖表</h3>
+        </div>
+        <p class="template">As shown in [[Table X]], [[main finding]].</p>
+        <p class="example">As shown in Table 3, technical skills received the highest weight among the five dimensions.</p>
+        <p class="note">As shown in 後面一定要接發現本身，而不是只說「結果如表所示」。</p>
+      </article>
+      <article class="phrase" id="RES-02" data-tags="排序">
+        <div class="phrase-head">
+          <span class="phrase-id">RES-02</span>
+          <h3 class="func">呈現排序結果</h3>
+        </div>
+        <p class="template">The top three [[items]] were [[A]], [[B]], and [[C]], which together accounted for [[percentage]] of [[total]].</p>
+        <p class="example">The top three indicators were ball control, decision making, and sprint speed, which together accounted for 48% of the total weight.</p>
+        <p class="note">AHP、TOPSIS 等排序型研究很常用，最後補上累積比例更有說服力。</p>
+      </article>
+      <article class="phrase" id="RES-03" data-tags="比較">
+        <div class="phrase-head">
+          <span class="phrase-id">RES-03</span>
+          <h3 class="func">比較不同模型表現</h3>
+        </div>
+        <p class="template">[[Model A]] outperformed [[Model B]] in terms of [[metric]].</p>
+        <p class="example">The proposed model outperformed the baseline logistic regression in terms of both accuracy and recall.</p>
+        <p class="note">outperformed 後面記得用 in terms of 說明比較的面向。</p>
+      </article>
+      <article class="phrase" id="RES-04" data-tags="比較 不顯著">
+        <div class="phrase-head">
+          <span class="phrase-id">RES-04</span>
+          <h3 class="func">描述沒有顯著差異的結果</h3>
+        </div>
+        <p class="template">No significant difference was found between [[group A]] and [[group B]] in [[variable]].</p>
+        <p class="example">No significant difference was found between forwards and midfielders in aerobic capacity.</p>
+        <p class="note">不顯著的結果也要寫，避免只報好消息，用被動語態較中性。</p>
+      </article>
+      <article class="phrase" id="RES-05" data-tags="可解釋性">
+        <div class="phrase-head">
+          <span class="phrase-id">RES-05</span>
+          <h3 class="func">說明 SHAP 等解釋結果</h3>
+        </div>
+        <p class="template">The SHAP analysis indicated that [[feature]] had the largest impact on [[prediction]].</p>
+        <p class="example">The SHAP analysis indicated that decision making had the largest impact on the predicted selection outcome.</p>
+        <p class="note">indicated 比 proved 保守，結果章節避免用 prove。</p>
+      </article>
+      <article class="phrase" id="RES-06" data-tags="檢定">
+        <div class="phrase-head">
+          <span class="phrase-id">RES-06</span>
+          <h3 class="func">呈現一致性檢定結果</h3>
+        </div>
+        <p class="template">All consistency ratios were below [[threshold]], indicating that [[conclusion]].</p>
+        <p class="example">All consistency ratios were below 0.1, indicating that the expert judgments were acceptable.</p>
+        <p class="note">AHP 研究必備的一句，交代問卷結果可信。</p>
+      </article>
+      <article class="phrase" id="RES-07" data-tags="數據 比較">
+        <div class="phrase-head">
+          <span class="phrase-id">RES-07</span>
+          <h3 class="func">報告平均值與標準差</h3>
+        </div>
+        <p class="template">[[Metric]] was [[mean ± SD]] across the [[k]] folds.</p>
+        <p class="example">The recall of the proposed model was 0.82 ± 0.05 across the ten folds.</p>
+        <p class="note">交叉驗證的結果要附標準差，讀者才能判斷模型穩不穩定。</p>
+      </article>
+      <article class="phrase" id="RES-08" data-tags="可解釋性">
+        <div class="phrase-head">
+          <span class="phrase-id">RES-08</span>
+          <h3 class="func">說明特徵影響方向</h3>
+        </div>
+        <p class="template">Higher values of [[feature]] were associated with positive SHAP values, indicating a higher likelihood of [[outcome]].</p>
+        <p class="example">Higher values of decision-making scores were associated with positive SHAP values, indicating a higher likelihood of selection.</p>
+        <p class="note">除了「哪個特徵最重要」，也要交代「方向」，也就是數值越高越有利還是越不利。</p>
+      </article>
+      <article class="phrase" id="RES-09" data-tags="穩健性">
+        <div class="phrase-head">
+          <span class="phrase-id">RES-09</span>
+          <h3 class="func">報告敏感度分析</h3>
+        </div>
+        <p class="template">The sensitivity analysis showed that the ranking of [[alternatives]] remained stable when [[weights]] were varied by [[range]].</p>
+        <p class="example">The sensitivity analysis showed that the ranking of the top five players remained stable when the criteria weights were varied by ±20%.</p>
+        <p class="note">MCDM 研究的審稿人幾乎都會要求敏感度分析，這句用來交代排序結果不是偶然。</p>
+      </article>
+      <article class="phrase" id="RES-10" data-tags="穩健性 比較">
+        <div class="phrase-head">
+          <span class="phrase-id">RES-10</span>
+          <h3 class="func">比較不同方法的排序一致性</h3>
+        </div>
+        <p class="template">The rankings obtained by [[method A]] and [[method B]] were highly consistent ([[statistic]]).</p>
+        <p class="example">The rankings obtained by TOPSIS and VIKOR were highly consistent (Spearman&#x27;s ρ = 0.91).</p>
+        <p class="note">多種 MCDM 方法交叉比對時使用，括號內放相關係數，簡潔又有證據。</p>
+      </article>
+
+    </main>
+
+    <nav class="pager">
+      <a class="prev" href="06-methods.html">← 研究方法</a>
+      <a class="next" href="08-discussion-limitation.html">討論與限制 →</a>
+    </nav>
+
+  </div>
+  <script src="../assets/main.js"></script>
+</body>
+</html>
