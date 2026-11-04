@@ -340,3 +340,56 @@ a { color: var(--accent); }
 .sources a:hover { color: var(--accent); }
 .src-journal { font-style: italic; margin-left: 4px; }
 .src-use { display: block; font-size: .82rem; color: var(--accent); }
+
+/* ---------- 自訂句型（存在瀏覽器，見 AGENTS.md 4.4） ---------- */
+.custom-add { margin: 0 0 16px; }
+.custom-toggle, .custom-save, .custom-cancel, .custom-export, .custom-import-label {
+  font: inherit;
+  font-size: .9rem;
+  border: 1px solid var(--accent);
+  background: var(--card);
+  color: var(--accent);
+  border-radius: 8px;
+  padding: 4px 14px;
+  cursor: pointer;
+  display: inline-block;
+}
+.custom-toggle:hover, .custom-export:hover, .custom-import-label:hover { background: var(--accent-soft); }
+.custom-save { background: var(--accent); color: var(--on-accent); }
+.custom-form {
+  margin-top: 12px;
+  padding: 16px 20px;
+  background: var(--card);
+  border: 1px solid var(--surface);
+  border-radius: var(--radius);
+  display: grid;
+  gap: 10px;
+}
+.custom-form label { display: grid; gap: 4px; font-size: .88rem; color: var(--ink-soft); }
+.custom-form input, .custom-form textarea {
+  font: inherit;
+  font-size: .95rem;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 6px 10px;
+  background: var(--paper);
+  width: 100%;
+}
+.custom-form textarea { font-family: var(--serif-en); resize: vertical; }
+.custom-form input:focus, .custom-form textarea:focus { outline: 2px solid var(--surface); border-color: var(--accent); }
+.custom-hint { margin: 0; font-size: .85rem; color: var(--ink-soft); }
+.custom-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+.custom-msg { margin: 0; font-size: .88rem; color: var(--ink); background: var(--slot-bg); border-radius: 6px; padding: 6px 10px; }
+.phrase.custom { border-color: var(--pink); }
+.custom-badge {
+  font-size: .72rem;
+  color: var(--ink);
+  background: var(--slot-bg);
+  border-radius: 4px;
+  padding: 0 6px;
+}
+.custom-del { margin-left: 4px; }
+.custom-summary { margin-bottom: 8px; font-size: .92rem; color: var(--ink-soft); }
+.custom-summary > p { margin: 0 0 10px; }
+.custom-count-chip { margin-left: 8px; font-size: .8rem; color: var(--ink); background: var(--slot-bg); border-radius: 4px; padding: 0 6px; }
