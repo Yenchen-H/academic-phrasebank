@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>統計分析與報告｜學術佳句庫</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&family=Noto+Serif+TC:wght@600;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <div class="wrap">
+
+    <header class="page-header">
+      <a class="back" href="../index.html">← 回目錄</a><br>
+      <span class="code">STA</span>
+      <h1>統計分析與報告</h1>
+      <p class="en">Statistics Reporting</p>
+      <p class="lead">交代統計檢定的前提、方法與效果量，讓結果經得起審稿人檢查。</p>
+    </header>
+
+    <section class="usage">
+      <h2>寫作提醒</h2>
+      <ul>
+        <li>順序：先檢查前提（常態、變異數同質）→ 依前提與組數選擇檢定 → 定義效果量標準 → 報告結果。</li>
+        <li>時態：方法與結果都用過去式（was assessed, was used, showed）。</li>
+        <li>p 值一定要搭配效果量一起報告，只有 p &lt; .05 不代表差異有實際意義。</li>
+        <li>數字格式全文統一，例如 p = .02、d = 0.21，括號內用逗號分隔，不要用分號。</li>
+      </ul>
+    </section>
+
+    <section class="moves">
+      <h2>段落結構</h2>
+      <ol>
+        <li><span class="move-name">檢查檢定前提</span><a href="#STA-01">STA-01</a></li>
+        <li><span class="move-name">說明檢定方法的選擇</span><a href="#STA-02">STA-02</a><a href="#STA-03">STA-03</a></li>
+        <li><span class="move-name">定義效果量標準</span><a href="#STA-04">STA-04</a></li>
+        <li><span class="move-name">報告檢定結果</span><a href="#STA-05">STA-05</a></li>
+      </ol>
+    </section>
+
+    <div class="filter-bar"></div>
+
+    <main class="phrase-list">
+
+      <article class="phrase" id="STA-01" data-tags="前提">
+        <div class="phrase-head">
+          <span class="phrase-id">STA-01</span>
+          <h3 class="func">交代檢定前提的檢查</h3>
+        </div>
+        <p class="template">[[Assumption A]] was assessed using [[test A]], and [[assumption B]] using [[test B]].</p>
+        <p class="example">Normality of the jump height data was assessed using the Shapiro-Wilk test, and homogeneity of variance using Levene&#x27;s test.</p>
+        <p class="note">統計分析小節的第一句。後半句省略 was assessed，避免同一個動詞重複兩次。</p>
+      </article>
+      <article class="phrase" id="STA-02" data-tags="方法選擇 前提">
+        <div class="phrase-head">
+          <span class="phrase-id">STA-02</span>
+          <h3 class="func">說明改用無母數檢定的理由</h3>
+        </div>
+        <p class="template">Since the assumptions of [[A]] and [[B]] were not met, [[test]] was used to [[comparison]].</p>
+        <p class="example">Since the assumptions of normality and equal variance were not met, the Kruskal-Wallis test was used to compare the three age groups.</p>
+        <p class="note">緊接在前提檢查之後，用 Since 交代因果，審稿人就不會問為什麼不用 ANOVA。</p>
+      </article>
+      <article class="phrase" id="STA-03" data-tags="方法選擇">
+        <div class="phrase-head">
+          <span class="phrase-id">STA-03</span>
+          <h3 class="func">依組數說明檢定方法</h3>
+        </div>
+        <p class="template">[[Test A]] was used to compare two independent groups, and [[test B]] was used when three or more groups were compared.</p>
+        <p class="example">The Mann-Whitney U test was used to compare two playing positions, and the Kruskal-Wallis test was used when three or more positions were compared.</p>
+        <p class="note">一句交代兩種情境各用什麼檢定，比分成兩個獨立句子更緊湊。</p>
+      </article>
+      <article class="phrase" id="STA-04" data-tags="效果量">
+        <div class="phrase-head">
+          <span class="phrase-id">STA-04</span>
+          <h3 class="func">定義效果量判斷標準</h3>
+        </div>
+        <p class="template">Effect size was assessed using [[index]] and interpreted as [[level 1]] ([[value]]), [[level 2]] ([[value]]), or [[level 3]] ([[value]]) [[citation]].</p>
+        <p class="example">Effect size was assessed using Cohen&#x27;s d and interpreted as small (0.2), medium (0.5), or large (0.8) [25].</p>
+        <p class="note">先定義標準，結果章節才能說 small 或 large。範圍值用 to 連接（例如 0.01 to 0.06），不要用連接號。</p>
+      </article>
+      <article class="phrase" id="STA-05" data-tags="效果量 結果">
+        <div class="phrase-head">
+          <span class="phrase-id">STA-05</span>
+          <h3 class="func">報告顯著但效果量小</h3>
+        </div>
+        <p class="template">Although [[group A]] showed higher [[variable]] than [[group B]] ([[statistics]]), the effect size was small.</p>
+        <p class="example">Although forwards showed higher sprint speed than defenders (p = .02, d = 0.21), the effect size was small.</p>
+        <p class="note">樣本數大時很容易顯著，這句誠實交代差異雖然顯著但實際影響有限，討論章節可再解釋其意義。</p>
+      </article>
+
+    </main>
+
+    <nav class="pager">
+      <a class="prev" href="10-hedging-transitions.html">← 語氣保留與轉折</a>
+    </nav>
+
+  </div>
+  <script src="../assets/main.js"></script>
+</body>
+</html>
