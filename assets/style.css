@@ -33,6 +33,9 @@
 
 * { box-sizing: border-box; }
 
+/* 全站字級基準：18px（所有 rem 依此放大） */
+html { font-size: 112.5%; }
+
 body {
   margin: 0;
   background: var(--paper);
@@ -45,7 +48,7 @@ body {
 a { color: var(--accent); }
 
 .wrap {
-  max-width: 880px;
+  max-width: 980px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -69,7 +72,7 @@ a { color: var(--accent); }
   margin: 0 0 14px;
   letter-spacing: .04em;
 }
-.hero p { color: var(--ink-soft); max-width: 640px; margin: 0; }
+.hero p { color: var(--ink-soft); max-width: 720px; margin: 0; }
 
 .how {
   display: grid;
