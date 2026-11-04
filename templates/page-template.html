@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{中文標題}}｜學術佳句庫</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&family=Noto+Serif+TC:wght@600;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <div class="wrap">
+
+    <header class="page-header">
+      <a class="back" href="../index.html">← 回目錄</a><br>
+      <span class="code">{{章節代碼}}</span>
+      <h1>{{中文標題}}</h1>
+      <p class="en">{{English Title}}</p>
+      <p class="lead">{{一句話說明這個章節在論文中的任務}}</p>
+    </header>
+
+    <section class="usage">
+      <h2>寫作提醒</h2>
+      <ul>
+        <li>{{提醒 1}}</li>
+        <li>{{提醒 2}}</li>
+      </ul>
+    </section>
+
+    <div class="filter-bar"></div>
+
+    <main class="phrase-list">
+
+      <!-- 句型卡片：每頁 5 到 12 張，格式見 AGENTS.md 4.2 -->
+      <article class="phrase" id="{{代碼}}-01" data-tags="{{標籤1}} {{標籤2}}">
+        <div class="phrase-head">
+          <span class="phrase-id">{{代碼}}-01</span>
+          <h3 class="func">{{這句話的功能}}</h3>
+        </div>
+        <p class="template">{{English template with [[slots]]}}</p>
+        <p class="example">{{English example sentence}}</p>
+        <p class="note">{{中文說明：什麼時候用、要注意什麼}}</p>
+      </article>
+
+    </main>
+
+    <nav class="pager">
+      <a class="prev" href="{{上一頁檔名}}">← {{上一章中文標題}}</a>
+      <a class="next" href="{{下一頁檔名}}">{{下一章中文標題}} →</a>
+    </nav>
+
+  </div>
+  <script src="../assets/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>研究方法｜學術佳句庫</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&family=Noto+Serif+TC:wght@600;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <div class="wrap">
+
+    <header class="page-header">
+      <a class="back" href="../index.html">← 回目錄</a><br>
+      <span class="code">MTD</span>
+      <h1>研究方法</h1>
+      <p class="en">Methods</p>
+      <p class="lead">清楚描述資料、流程與參數，讓其他研究者可以照著重做。</p>
+    </header>
+
+    <section class="usage">
+      <h2>寫作提醒</h2>
+      <ul>
+        <li>方法章節以過去式描述你做過的步驟（were collected, was applied）。</li>
+        <li>先給整體流程（最好搭配流程圖），再分小節說明每一步。</li>
+        <li>參數、樣本數、軟體版本要寫清楚，這是審稿人最常要求補充的地方。</li>
+      </ul>
+    </section>
+
+    <div class="filter-bar"></div>
+
+    <main class="phrase-list">
+
+      <article class="phrase" id="MTD-01" data-tags="流程">
+        <div class="phrase-head">
+          <span class="phrase-id">MTD-01</span>
+          <h3 class="func">介紹整體研究流程</h3>
+        </div>
+        <p class="template">The overall framework of this study is shown in [[Figure X]] and consists of [[number]] stages.</p>
+        <p class="example">The overall framework of this study is shown in Figure 1 and consists of three stages.</p>
+        <p class="note">方法章節第一句，先給讀者全貌，再逐步展開。</p>
+      </article>
+      <article class="phrase" id="MTD-02" data-tags="資料">
+        <div class="phrase-head">
+          <span class="phrase-id">MTD-02</span>
+          <h3 class="func">描述資料來源與樣本</h3>
+        </div>
+        <p class="template">Data were collected from [[number]] [[participants]] who [[inclusion criteria]].</p>
+        <p class="example">Data were collected from 120 youth football players who had at least two years of competitive experience.</p>
+        <p class="note">data 在正式寫作常當複數，所以用 were。收案條件用 who 子句交代。</p>
+      </article>
+      <article class="phrase" id="MTD-03" data-tags="資料 專家">
+        <div class="phrase-head">
+          <span class="phrase-id">MTD-03</span>
+          <h3 class="func">說明專家問卷的設計</h3>
+        </div>
+        <p class="template">A questionnaire was designed based on [[source]] and reviewed by [[number]] experts in [[field]].</p>
+        <p class="example">A questionnaire was designed based on the literature review and reviewed by five experts in football coaching.</p>
+        <p class="note">MCDM 研究常用，說明問卷的效度來源。</p>
+      </article>
+      <article class="phrase" id="MTD-04" data-tags="方法選擇">
+        <div class="phrase-head">
+          <span class="phrase-id">MTD-04</span>
+          <h3 class="func">說明使用某方法的理由</h3>
+        </div>
+        <p class="template">[[Method]] was chosen because it [[reason]].</p>
+        <p class="example">Random forest was chosen because it handles nonlinear relationships well and provides feature importance scores.</p>
+        <p class="note">審稿人常問 why this method，簡短交代理由就能避免被追問。</p>
+      </article>
+      <article class="phrase" id="MTD-05" data-tags="參數">
+        <div class="phrase-head">
+          <span class="phrase-id">MTD-05</span>
+          <h3 class="func">描述參數設定</h3>
+        </div>
+        <p class="template">The model was trained with [[parameter A]] set to [[value]] and [[parameter B]] set to [[value]].</p>
+        <p class="example">The model was trained with the number of trees set to 500 and the maximum depth set to 10.</p>
+        <p class="note">參數多時可以改成表格，句子只寫 The main hyperparameters are listed in Table 2.</p>
+      </article>
+      <article class="phrase" id="MTD-06" data-tags="評估">
+        <div class="phrase-head">
+          <span class="phrase-id">MTD-06</span>
+          <h3 class="func">說明評估指標</h3>
+        </div>
+        <p class="template">Model performance was evaluated using [[metric A]] and [[metric B]].</p>
+        <p class="example">Model performance was evaluated using accuracy and the F1-score.</p>
+        <p class="note">指標若不常見，下一句補上公式或簡短定義。</p>
+      </article>
+
+    </main>
+
+    <nav class="pager">
+      <a class="prev" href="03-aim-contribution.html">← 研究目的與貢獻</a>
+      <a class="next" href="05-results.html">結果呈現 →</a>
+    </nav>
+
+  </div>
+  <script src="../assets/main.js"></script>
+</body>
+</html>
