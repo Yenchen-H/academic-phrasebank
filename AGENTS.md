@@ -127,7 +127,8 @@ academic-phrasebank/
 
 ## 6. 視覺風格
 
-- 風格關鍵字：**像一本乾淨的紙本筆記**。米白底、深藍字、細線分隔，不要漸層、陰影過重或 emoji。
+- 風格關鍵字：**乾淨的紫色系筆記本**。淡紫底、深紫字、紫色強調、粉紅點綴，細線分隔，不要漸層、陰影過重或 emoji。
+- 配色由 `style.css` 最上方 6 個 `--hb-*` 色票決定（background #F9F5FF、surface #D3C4FF、text #21123B、primary #865DFF、accent #FF8DC7、on-primary #FFFFFF），要換配色只改這 6 個值。
 - 顏色只能使用 `style.css` 中 `:root` 定義的變數，不要寫死色碼。
 - 中文標題用 Noto Serif TC，內文用 Noto Sans TC，英文句型用 Source Serif 4。
 - 手機寬度（360px）也要能閱讀，不可出現橫向捲軸。
